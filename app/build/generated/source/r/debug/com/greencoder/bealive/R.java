@@ -168,17 +168,22 @@ containing a value of this type.
         public static final int icon_refresh=0x7f020001;
     }
     public static final class id {
-        public static final int action_refresh=0x7f080005;
-        public static final int fragment=0x7f080001;
+        public static final int action_refresh=0x7f080008;
         public static final int item_touch_helper_previous_elevation=0x7f080000;
-        public static final int textview_date=0x7f080004;
-        public static final int textview_place=0x7f080003;
-        public static final int view_color=0x7f080002;
+        public static final int list_frag=0x7f080003;
+        public static final int map_frag=0x7f080002;
+        public static final int textView=0x7f080005;
+        public static final int text_frag=0x7f080001;
+        public static final int textview_date=0x7f080007;
+        public static final int textview_place=0x7f080006;
+        public static final int view_color=0x7f080004;
     }
     public static final class layout {
         public static final int activity_detail=0x7f040000;
-        public static final int fragment_detail_text=0x7f040001;
-        public static final int list_item_row=0x7f040002;
+        public static final int activity_main=0x7f040001;
+        public static final int fragment_detail_map=0x7f040002;
+        public static final int fragment_detail_text=0x7f040003;
+        public static final int list_item_row=0x7f040004;
     }
     public static final class menu {
         public static final int menu_main=0x7f0a0000;
@@ -190,9 +195,10 @@ containing a value of this type.
         public static final int action_refresh=0x7f090000;
         public static final int action_settings=0x7f090001;
         public static final int app_name=0x7f090002;
-        public static final int hello_world=0x7f090003;
-        public static final int no_internet=0x7f090004;
-        public static final int title_activity_detail=0x7f090005;
+        public static final int hello_blank_fragment=0x7f090003;
+        public static final int hello_world=0x7f090004;
+        public static final int no_internet=0x7f090005;
+        public static final int title_activity_detail=0x7f090006;
     }
     public static final class style {
         /**  Customize your theme here. 
