@@ -2,6 +2,7 @@ package com.greencoder.bealive;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -73,6 +74,12 @@ public class SummaryAdapter extends ArrayAdapter<Feature> {
         holder.placeTextView.setText(allEarthQuackData[position].getProperties().getPlace());
 
         holder.dateTextView.setText(allEarthQuackData[position].getProperties().getDate()+"");
+
+        IEarthQuackColor color=EarthQuackColorFactory.getColor(allEarthQuackData[position].getProperties().getMag());
+
+        int rgb= Color.rgb(color.getRed(),color.getGreen(),color.getBlue());
+
+        holder.colorView.setBackgroundColor(rgb);
 
         return convertView;
     }

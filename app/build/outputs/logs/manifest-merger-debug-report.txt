@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:2:1-33:12
+ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:2:1-34:12
 	package
 		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:3:5-37
 		INJECTED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/Android
 	android:name
 		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:7:5-31:19
+ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:7:5-32:19
 MERGED from [BeAlive:volley:unspecified] /Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/BeAlive/volley/unspecified/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:cardview-v7:23.0.1] /Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.0.1] /Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/AndroidManifest.xml:22:5-20
@@ -51,19 +51,21 @@ ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/Android
 	android:name
 		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:20:27-74
 activity#com.greencoder.bealive.DetailActivity
-ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:23:9-30:20
+ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:23:9-31:20
+	android:screenOrientation
+		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:26:13-49
 	android:label
 		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:25:13-58
 	android:parentActivityName
-		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:26:13-55
+		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:27:13-55
 	android:name
 		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:24:13-43
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:27:13-29:71
+ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:28:13-30:71
 	android:value
-		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:29:17-68
+		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:30:17-68
 	android:name
-		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:28:17-63
+		ADDED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml:29:17-63
 uses-sdk
 INJECTED from /Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [BeAlive:volley:unspecified] /Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/BeAlive/volley/unspecified/AndroidManifest.xml:7:5-43
