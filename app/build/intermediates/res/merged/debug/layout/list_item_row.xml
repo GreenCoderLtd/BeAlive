@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-    <View android:id="@+id/view_color"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_alignParentTop="true"
-        android:background="#FF0000"
-        android:visibility="visible"/>
-    <TextView
-        android:id="@+id/textview_place"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Africa Windowsor Test"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:layout_marginBottom="@dimen/activity_list_vertical_margin"
-        />
-    <TextView
-        android:id="@+id/textview_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="05/13/1957"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        />
+        android:orientation="horizontal"
+
+        >
+
+        <View android:id="@+id/view_color"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="#FF0000"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/textview_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Africa Windowsor Test"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginBottom="@dimen/activity_list_vertical_margin"
+                android:gravity="top"
+                />
+            <TextView
+                android:id="@+id/textview_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05/13/1957"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="bottom"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_forward_arrow"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
 
 </LinearLayout><!-- From: file:/Users/newcomputer/AndroidStudioProjects/BeAlive/app/src/main/res/layout/list_item_row.xml -->

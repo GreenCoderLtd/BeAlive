@@ -1,11 +1,15 @@
 package com.greencoder.bealive;
 
 import android.app.Activity;
+import android.app.ExpandableListActivity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -34,6 +38,8 @@ public class MainActivity extends ListActivity {
         super.onStart();
 
         fetchEartQuackSummary();
+
+
     }
 
     public void fetchEartQuackSummary()
@@ -64,6 +70,8 @@ public class MainActivity extends ListActivity {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
+                        Toast.makeText(MainActivity.this,getString(R.string.no_internet),Toast.LENGTH_LONG).show();
+
                     }
                 }
 
@@ -72,6 +80,14 @@ public class MainActivity extends ListActivity {
         );
 
         Volley.newRequestQueue(this).add(request);
+    }
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+
+
+        Intent detailIntent=new Intent(this,DetailActivity.class);
+        startActivity(detailIntent);
     }
 
     @Override
