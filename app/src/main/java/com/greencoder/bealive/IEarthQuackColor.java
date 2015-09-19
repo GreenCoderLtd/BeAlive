@@ -11,6 +11,7 @@ public interface IEarthQuackColor {
     public int getRed();
     public int getGreen();
     public int getBlue();
+    public int getRGBColor();
 
 
 

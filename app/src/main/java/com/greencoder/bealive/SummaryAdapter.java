@@ -42,8 +42,8 @@ public class SummaryAdapter extends ArrayAdapter<Feature> {
 
     static class ViewHolder
     {
-        @Bind(R.id.textview_place) TextView placeTextView;
-        @Bind(R.id.textview_date)TextView dateTextView;
+        @Bind(R.id.textview_magnitude) TextView magnitudeTextView;
+        @Bind(R.id.textview_place)TextView placeTextView;
         @Bind(R.id.view_color) View colorView;
 
         public ViewHolder(View view)
@@ -71,15 +71,15 @@ public class SummaryAdapter extends ArrayAdapter<Feature> {
             holder= (ViewHolder) convertView.getTag();
         }
 
+        IEarthQuackColor earthQuackColor=EarthQuackColorFactory.getColor(allEarthQuackData[position].getProperties().getMag());
+
+        holder.magnitudeTextView.setText(allEarthQuackData[position].getProperties().getMag()+"");
+
         holder.placeTextView.setText(allEarthQuackData[position].getProperties().getPlace());
 
-        holder.dateTextView.setText(allEarthQuackData[position].getProperties().getDate()+"");
+        holder.colorView.setBackgroundColor(earthQuackColor.getRGBColor());
 
-        IEarthQuackColor color=EarthQuackColorFactory.getColor(allEarthQuackData[position].getProperties().getMag());
-
-        int rgb= Color.rgb(color.getRed(),color.getGreen(),color.getBlue());
-
-        holder.colorView.setBackgroundColor(rgb);
+        holder.magnitudeTextView.setTextColor(earthQuackColor.getRGBColor());
 
         return convertView;
     }

@@ -1,5 +1,7 @@
 package com.greencoder.bealive;
 
+import android.graphics.Color;
+
 /**
  * Created by newcomputer on 9/19/15.
  */
@@ -22,5 +24,10 @@ public class AEarthQuackColor implements IEarthQuackColor {
     @Override
     public int getBlue() {
         return blue;
+    }
+
+    public int getRGBColor()
+    {
+        return Color.rgb(red, green, blue);
     }
 }

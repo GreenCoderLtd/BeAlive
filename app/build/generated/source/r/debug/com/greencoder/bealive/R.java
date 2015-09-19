@@ -168,14 +168,18 @@ containing a value of this type.
         public static final int icon_refresh=0x7f020001;
     }
     public static final class id {
-        public static final int action_refresh=0x7f080008;
+        public static final int action_refresh=0x7f08000c;
+        public static final int hr_bar=0x7f080006;
         public static final int item_touch_helper_previous_elevation=0x7f080000;
         public static final int list_frag=0x7f080003;
         public static final int map_frag=0x7f080002;
-        public static final int textView=0x7f080005;
+        public static final int text_date=0x7f080008;
         public static final int text_frag=0x7f080001;
-        public static final int textview_date=0x7f080007;
-        public static final int textview_place=0x7f080006;
+        public static final int text_location=0x7f080007;
+        public static final int text_magnitude=0x7f080005;
+        public static final int text_time=0x7f080009;
+        public static final int textview_magnitude=0x7f08000a;
+        public static final int textview_place=0x7f08000b;
         public static final int view_color=0x7f080004;
     }
     public static final class layout {
@@ -183,7 +187,7 @@ containing a value of this type.
         public static final int activity_main=0x7f040001;
         public static final int fragment_detail_map=0x7f040002;
         public static final int fragment_detail_text=0x7f040003;
-        public static final int list_item_row=0x7f040004;
+        public static final int list_row_summary=0x7f040004;
     }
     public static final class menu {
         public static final int menu_main=0x7f0a0000;

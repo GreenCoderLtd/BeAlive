@@ -1,9 +1,9 @@
 package com.greencoder.bealive;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.app.ListFragment;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -75,11 +75,14 @@ public class EartQuackListFragment extends ListFragment {
 
                         EarthQuackSummary summary=new Gson().fromJson(response,EarthQuackSummary.class);
 
+                        getActivity().setTitle(Html.fromHtml("<small>"+summary.getMetadata().getTitle()+"</small>"));
+
+
                         Feature[] allEarthQuackData=new Feature[summary.getFeatures().size()];
 
                         summary.getFeatures().toArray(allEarthQuackData);
 
-                        summaryAdapter=new SummaryAdapter(getActivity(),R.layout.list_item_row,allEarthQuackData);
+                        summaryAdapter=new SummaryAdapter(getActivity(),R.layout.list_row_summary,allEarthQuackData);
 
                         setListAdapter(summaryAdapter);
                     }
