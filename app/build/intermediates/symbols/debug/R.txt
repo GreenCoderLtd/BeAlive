@@ -48,12 +48,9 @@ int layout list_row_summary 0x7f040004
 int menu menu_main 0x7f0a0000
 int mipmap ic_launcher 0x7f030000
 int string action_refresh 0x7f090000
-int string action_settings 0x7f090001
-int string app_name 0x7f090002
-int string hello_blank_fragment 0x7f090003
-int string hello_world 0x7f090004
-int string no_internet 0x7f090005
-int string title_activity_detail 0x7f090006
+int string app_name 0x7f090001
+int string no_internet 0x7f090002
+int string title_activity_detail 0x7f090003
 int style AppTheme 0x7f050000
 int style CardView 0x7f050001
 int style CardView_Dark 0x7f050002

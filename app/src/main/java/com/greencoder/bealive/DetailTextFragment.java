@@ -1,6 +1,8 @@
 package com.greencoder.bealive;
 
 import android.app.Fragment;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,6 +20,11 @@ import com.google.gson.Gson;
 import com.greencoder.bealive.model.EarthQuackSummary;
 import com.greencoder.bealive.model.Feature;
 import com.greencoder.bealive.model.detail.EarthQuackDetail;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -57,11 +64,103 @@ public class DetailTextFragment extends Fragment {
 
         super.onStart();
 
+        if(isConnected())
         fetchEartQuackDetail();
+    }
+
+    public Boolean isConnected()
+    {
+
+        ConnectivityManager cn = (ConnectivityManager) getActivity().getSystemService(getActivity().CONNECTIVITY_SERVICE);
+
+        NetworkInfo nf = cn.getActiveNetworkInfo();
+
+        if (nf != null && nf.isConnected() == true)
+        {
+            return true;
+        }
+        else
+        {
+            Toast.makeText(getActivity(), "No internet connection!",Toast.LENGTH_LONG).show();
+            return false;
+        }
+    }
+
+    public String convertMinToTimeZone(String minText)
+    {
+
+        char timeSign = minText.charAt(0);
+
+        minText=minText.substring(1,minText.length());
+
+        int min=Integer.parseInt(minText);
+
+        int hour = min / 60 ;
+
+        min = min % 60;
+
+        String formattedTime = String.format("%02d%02d", hour,min);
+
+        String timeZone = "GMT"+timeSign +""+formattedTime;
+
+        return timeZone;
+
+    }
+
+    public void bindDataToView(EarthQuackDetail earthQuackDetail)
+    {
+        double magnitude=earthQuackDetail.getProperties().getMag();
+
+        long timeInMillis=earthQuackDetail.getProperties().getTime();
+
+        String minTimeZone= earthQuackDetail.getProperties().getTz()+"";
+
+        double depth = earthQuackDetail.getGeometry().getCoordinates().get(2);
+
+        String location = earthQuackDetail.getProperties().getPlace();
+
+        IEarthQuackColor earthQuackColor = EarthQuackColorFactory.getColor(magnitude);
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");
+
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
+
+        Calendar calender=Calendar.getInstance();
+
+        //String timeZone=convertMinToTimeZone(minTimeZone);
+
+        //Calendar calendar=new GregorianCalendar(TimeZone.getTimeZone(timeZone));
+
+        //calendar.setTimeZone(TimeZone.getTimeZone(timeZone));
+
+        calender.setTimeInMillis(timeInMillis);
+
+        //String before = timeFormat.format(calendar.getTime());
+
+        //Log.i("Time Zone Before", calendar.getTimeZone().getDisplayName() +" "+ before);
+
+        //calendar.setTimeZone(TimeZone.getDefault());
+
+        //Log.i("Time Zone after", calendar.getTimeZone().getDisplayName());
+
+        String date = dateFormat.format(calender.getTime());
+
+        String time = timeFormat.format(calender.getTime());
+
+        magnitudeTextView.setText(magnitude + "");
+
+        magnitudeTextView.setTextColor(earthQuackColor.getRGBColor());
+
+        locationTextView.setText(location + "\n(Depth " + depth + " kilometers)");
+
+        dateTextView.setText(date);
+
+        timeTextView.setText(time);
     }
 
     public void fetchEartQuackDetail()
     {
+
         StringRequest request=new StringRequest(Request.Method.GET,detailUrl,
 
                 new Response.Listener<String>()
@@ -70,30 +169,11 @@ public class DetailTextFragment extends Fragment {
                     @Override
                     public void onResponse(String response) {
 
-                        EarthQuackDetail earthQuackDetail=new Gson().fromJson(response, EarthQuackDetail.class);
+                        EarthQuackDetail earthQuackDetail = new Gson().fromJson(response, EarthQuackDetail.class);
 
-                        double magnitude=earthQuackDetail.getProperties().getMag();
 
-                        long timeInMillis=earthQuackDetail.getProperties().getTime();
+                        bindDataToView(earthQuackDetail);
 
-                        String timeZone= earthQuackDetail.getProperties().getTz()+"";
-
-                        double depth = earthQuackDetail.getGeometry().getCoordinates().get(2);
-
-                        String location = earthQuackDetail.getProperties().getPlace();
-
-                        IEarthQuackColor earthQuackColor = EarthQuackColorFactory.getColor(magnitude);
-
-                        magnitudeTextView.setText(magnitude+"");
-                        magnitudeTextView.setTextColor(earthQuackColor.getRGBColor());
-
-                        locationTextView.setText(location+"\n(Depth "+ depth +" kilometers)");
-
-                        dateTextView.setText(timeInMillis+"");
-
-                        timeTextView.setText(timeZone);
-
-                        //Toast.makeText(getActivity(),magnitude+" "+timeInMillis+" "+timeZone+" "+depth+" "+location,Toast.LENGTH_LONG).show();
                     }
 
                 },
@@ -103,7 +183,9 @@ public class DetailTextFragment extends Fragment {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
-                        Toast.makeText(getActivity(), getString(R.string.no_internet), Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity(), getString(R.string.no_internet), Toast.LENGTH_LONG).show();
+
+
 
                     }
                 }

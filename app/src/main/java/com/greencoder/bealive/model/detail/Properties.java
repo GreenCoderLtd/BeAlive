@@ -72,7 +72,7 @@ public class Properties {
     private Double rms;
     @SerializedName("gap")
     @Expose
-    private Long gap;
+    private Double gap;
     @SerializedName("magType")
     @Expose
     private String magType;
@@ -469,7 +469,7 @@ public class Properties {
      * @return
      * The gap
      */
-    public Long getGap() {
+    public Double getGap() {
         return gap;
     }
 
@@ -478,7 +478,7 @@ public class Properties {
      * @param gap
      * The gap
      */
-    public void setGap(Long gap) {
+    public void setGap(Double gap) {
         this.gap = gap;
     }
 

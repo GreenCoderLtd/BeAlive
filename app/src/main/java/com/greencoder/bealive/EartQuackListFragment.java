@@ -1,6 +1,8 @@
 package com.greencoder.bealive;
 
 import android.app.Activity;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.app.ListFragment;
 import android.text.Html;
@@ -60,7 +62,26 @@ public class EartQuackListFragment extends ListFragment {
     public void onStart() {
         super.onStart();
 
+        if(isConnected())
         fetchEartQuackSummary();
+    }
+
+    public Boolean isConnected()
+    {
+
+        ConnectivityManager cn = (ConnectivityManager) getActivity().getSystemService(getActivity().CONNECTIVITY_SERVICE);
+
+        NetworkInfo nf = cn.getActiveNetworkInfo();
+
+        if (nf != null && nf.isConnected() == true)
+        {
+            return true;
+        }
+        else
+        {
+            Toast.makeText(getActivity(), "No internet connection!",Toast.LENGTH_LONG).show();
+            return false;
+        }
     }
 
     public void fetchEartQuackSummary()
@@ -75,7 +96,7 @@ public class EartQuackListFragment extends ListFragment {
 
                         EarthQuackSummary summary=new Gson().fromJson(response,EarthQuackSummary.class);
 
-                        getActivity().setTitle(Html.fromHtml("<small>"+summary.getMetadata().getTitle()+"</small>"));
+                        getActivity().setTitle(Html.fromHtml("<small>" + summary.getMetadata().getTitle() + "</small>"));
 
 
                         Feature[] allEarthQuackData=new Feature[summary.getFeatures().size()];
@@ -94,7 +115,7 @@ public class EartQuackListFragment extends ListFragment {
                     @Override
                     public void onErrorResponse(VolleyError error) {
 
-                        Toast.makeText(getActivity(), getString(R.string.no_internet), Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getActivity(), getString(R.string.no_internet), Toast.LENGTH_LONG).show();
 
                     }
                 }
@@ -142,6 +163,7 @@ public class EartQuackListFragment extends ListFragment {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_refresh) {
 
+            if(isConnected())
             fetchEartQuackSummary();
 
             return true;
