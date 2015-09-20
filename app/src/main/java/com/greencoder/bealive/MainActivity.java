@@ -36,10 +36,12 @@ public class MainActivity extends Activity implements EartQuackListFragment.Eart
 
 
     @Override
-    public void onItemClick(String detailUrl) {
+    public void onItemClick(String detailUrl,double lat,double lon) {
 
         Intent detailIntent=new Intent(this,DetailActivity.class);
         detailIntent.putExtra(DetailTextFragment.DETAIL_URL,detailUrl);
+        detailIntent.putExtra(DetailActivity.LATITUDE,lat);
+        detailIntent.putExtra(DetailActivity.LONGITUDE,lon);
         startActivity(detailIntent);
     }
 }

@@ -34,7 +34,7 @@ public class EartQuackListFragment extends ListFragment {
 
     static interface EarthQuackListListener
     {
-        public void onItemClick(String detailUrl);
+        public void onItemClick(String detailUrl,double lat,double lon);
     }
 
     @Override
@@ -138,7 +138,11 @@ public class EartQuackListFragment extends ListFragment {
 
             String detailUrl=weatherDeatils.getProperties().getDetail();
 
-            listener.onItemClick(detailUrl);
+            double lat=weatherDeatils.getGeometry().getCoordinates().get(1);
+
+            double lon=weatherDeatils.getGeometry().getCoordinates().get(0);
+
+            listener.onItemClick(detailUrl,lat,lon);
         }
     }
 

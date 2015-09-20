@@ -9,6 +9,46 @@ package com.greencoder.bealive;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraBearing=0x7f01000f;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraTargetLat=0x7f010010;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraTargetLng=0x7f010011;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraTilt=0x7f010012;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int cameraZoom=0x7f010013;
         /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
 <p>This may also be a reference to a resource (in the form
@@ -64,6 +104,14 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int cardUseCompatPadding=0x7f010004;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circleCrop=0x7f01000d;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -114,6 +162,26 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int contentPaddingTop=0x7f010009;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int imageAspectRatio=0x7f01000c;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
+<tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int imageAspectRatioAdjust=0x7f01000b;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -121,7 +189,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int layoutManager=0x7f01000b;
+        public static final int layoutManager=0x7f01001e;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -129,7 +197,29 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int reverseLayout=0x7f01000d;
+        public static final int liteMode=0x7f010014;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>normal</code></td><td>1</td><td></td></tr>
+<tr><td><code>satellite</code></td><td>2</td><td></td></tr>
+<tr><td><code>terrain</code></td><td>3</td><td></td></tr>
+<tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
+</table>
+         */
+        public static final int mapType=0x7f01000e;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int reverseLayout=0x7f010020;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -137,7 +227,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int spanCount=0x7f01000c;
+        public static final int spanCount=0x7f01001f;
         /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -145,42 +235,162 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int stackFromEnd=0x7f01000e;
+        public static final int stackFromEnd=0x7f010021;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiCompass=0x7f010015;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiMapToolbar=0x7f01001d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiRotateGestures=0x7f010016;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiScrollGestures=0x7f010017;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiTiltGestures=0x7f010018;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiZoomControls=0x7f010019;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int uiZoomGestures=0x7f01001a;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int useViewLifecycle=0x7f01001b;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int zOrderOnTop=0x7f01001c;
     }
     public static final class color {
-        public static final int cardview_dark_background=0x7f070000;
-        public static final int cardview_light_background=0x7f070001;
-        public static final int cardview_shadow_end_color=0x7f070002;
-        public static final int cardview_shadow_start_color=0x7f070003;
+        public static final int cardview_dark_background=0x7f080000;
+        public static final int cardview_light_background=0x7f080001;
+        public static final int cardview_shadow_end_color=0x7f080002;
+        public static final int cardview_shadow_start_color=0x7f080003;
+        public static final int common_action_bar_splitter=0x7f080004;
+        public static final int common_signin_btn_dark_text_default=0x7f080005;
+        public static final int common_signin_btn_dark_text_disabled=0x7f080006;
+        public static final int common_signin_btn_dark_text_focused=0x7f080007;
+        public static final int common_signin_btn_dark_text_pressed=0x7f080008;
+        public static final int common_signin_btn_default_background=0x7f080009;
+        public static final int common_signin_btn_light_text_default=0x7f08000a;
+        public static final int common_signin_btn_light_text_disabled=0x7f08000b;
+        public static final int common_signin_btn_light_text_focused=0x7f08000c;
+        public static final int common_signin_btn_light_text_pressed=0x7f08000d;
+        public static final int common_signin_btn_text_dark=0x7f08000e;
+        public static final int common_signin_btn_text_light=0x7f08000f;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_list_horizontal_margin=0x7f060001;
-        public static final int activity_list_vertical_margin=0x7f060002;
-        public static final int activity_vertical_margin=0x7f060003;
-        public static final int cardview_compat_inset_shadow=0x7f060004;
-        public static final int cardview_default_elevation=0x7f060005;
-        public static final int cardview_default_radius=0x7f060006;
-        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f060007;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_list_horizontal_margin=0x7f070001;
+        public static final int activity_list_vertical_margin=0x7f070002;
+        public static final int activity_vertical_margin=0x7f070003;
+        public static final int cardview_compat_inset_shadow=0x7f070004;
+        public static final int cardview_default_elevation=0x7f070005;
+        public static final int cardview_default_radius=0x7f070006;
+        public static final int item_touch_helper_max_drag_scroll_per_frame=0x7f070007;
     }
     public static final class drawable {
-        public static final int icon_forward_arrow=0x7f020000;
-        public static final int icon_refresh=0x7f020001;
+        public static final int common_full_open_on_phone=0x7f020000;
+        public static final int common_ic_googleplayservices=0x7f020001;
+        public static final int common_signin_btn_icon_dark=0x7f020002;
+        public static final int common_signin_btn_icon_disabled_dark=0x7f020003;
+        public static final int common_signin_btn_icon_disabled_focus_dark=0x7f020004;
+        public static final int common_signin_btn_icon_disabled_focus_light=0x7f020005;
+        public static final int common_signin_btn_icon_disabled_light=0x7f020006;
+        public static final int common_signin_btn_icon_focus_dark=0x7f020007;
+        public static final int common_signin_btn_icon_focus_light=0x7f020008;
+        public static final int common_signin_btn_icon_light=0x7f020009;
+        public static final int common_signin_btn_icon_normal_dark=0x7f02000a;
+        public static final int common_signin_btn_icon_normal_light=0x7f02000b;
+        public static final int common_signin_btn_icon_pressed_dark=0x7f02000c;
+        public static final int common_signin_btn_icon_pressed_light=0x7f02000d;
+        public static final int common_signin_btn_text_dark=0x7f02000e;
+        public static final int common_signin_btn_text_disabled_dark=0x7f02000f;
+        public static final int common_signin_btn_text_disabled_focus_dark=0x7f020010;
+        public static final int common_signin_btn_text_disabled_focus_light=0x7f020011;
+        public static final int common_signin_btn_text_disabled_light=0x7f020012;
+        public static final int common_signin_btn_text_focus_dark=0x7f020013;
+        public static final int common_signin_btn_text_focus_light=0x7f020014;
+        public static final int common_signin_btn_text_light=0x7f020015;
+        public static final int common_signin_btn_text_normal_dark=0x7f020016;
+        public static final int common_signin_btn_text_normal_light=0x7f020017;
+        public static final int common_signin_btn_text_pressed_dark=0x7f020018;
+        public static final int common_signin_btn_text_pressed_light=0x7f020019;
+        public static final int icon_forward_arrow=0x7f02001a;
+        public static final int icon_refresh=0x7f02001b;
     }
     public static final class id {
-        public static final int action_refresh=0x7f08000c;
-        public static final int hr_bar=0x7f080006;
-        public static final int item_touch_helper_previous_elevation=0x7f080000;
-        public static final int list_frag=0x7f080003;
-        public static final int map_frag=0x7f080002;
-        public static final int text_date=0x7f080008;
-        public static final int text_frag=0x7f080001;
-        public static final int text_location=0x7f080007;
-        public static final int text_magnitude=0x7f080005;
-        public static final int text_time=0x7f080009;
-        public static final int textview_magnitude=0x7f08000a;
-        public static final int textview_place=0x7f08000b;
-        public static final int view_color=0x7f080004;
+        public static final int action_refresh=0x7f090013;
+        public static final int adjust_height=0x7f090001;
+        public static final int adjust_width=0x7f090002;
+        public static final int hr_bar=0x7f09000d;
+        public static final int hybrid=0x7f090004;
+        public static final int item_touch_helper_previous_elevation=0x7f090000;
+        public static final int list_frag=0x7f09000a;
+        public static final int map_frag=0x7f090009;
+        public static final int none=0x7f090003;
+        public static final int normal=0x7f090005;
+        public static final int satellite=0x7f090006;
+        public static final int terrain=0x7f090007;
+        public static final int text_date=0x7f09000f;
+        public static final int text_frag=0x7f090008;
+        public static final int text_location=0x7f09000e;
+        public static final int text_magnitude=0x7f09000c;
+        public static final int text_time=0x7f090010;
+        public static final int textview_magnitude=0x7f090011;
+        public static final int textview_place=0x7f090012;
+        public static final int view_color=0x7f09000b;
+    }
+    public static final class integer {
+        public static final int google_play_services_version=0x7f0a0000;
     }
     public static final class layout {
         public static final int activity_detail=0x7f040000;
@@ -190,25 +400,59 @@ containing a value of this type.
         public static final int list_row_summary=0x7f040004;
     }
     public static final class menu {
-        public static final int menu_main=0x7f0a0000;
+        public static final int menu_main=0x7f0b0000;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
     }
     public static final class string {
-        public static final int action_refresh=0x7f090000;
-        public static final int app_name=0x7f090001;
-        public static final int no_internet=0x7f090002;
-        public static final int title_activity_detail=0x7f090003;
+        public static final int action_refresh=0x7f050020;
+        public static final int app_name=0x7f050021;
+        public static final int auth_google_play_services_client_facebook_display_name=0x7f050022;
+        public static final int auth_google_play_services_client_google_display_name=0x7f050023;
+        public static final int common_android_wear_notification_needs_update_text=0x7f050000;
+        public static final int common_android_wear_update_text=0x7f050001;
+        public static final int common_android_wear_update_title=0x7f050002;
+        public static final int common_google_play_services_api_unavailable_text=0x7f050003;
+        public static final int common_google_play_services_enable_button=0x7f050004;
+        public static final int common_google_play_services_enable_text=0x7f050005;
+        public static final int common_google_play_services_enable_title=0x7f050006;
+        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f050007;
+        public static final int common_google_play_services_install_button=0x7f050008;
+        public static final int common_google_play_services_install_text_phone=0x7f050009;
+        public static final int common_google_play_services_install_text_tablet=0x7f05000a;
+        public static final int common_google_play_services_install_title=0x7f05000b;
+        public static final int common_google_play_services_invalid_account_text=0x7f05000c;
+        public static final int common_google_play_services_invalid_account_title=0x7f05000d;
+        public static final int common_google_play_services_needs_enabling_title=0x7f05000e;
+        public static final int common_google_play_services_network_error_text=0x7f05000f;
+        public static final int common_google_play_services_network_error_title=0x7f050010;
+        public static final int common_google_play_services_notification_needs_update_title=0x7f050011;
+        public static final int common_google_play_services_notification_ticker=0x7f050012;
+        public static final int common_google_play_services_sign_in_failed_text=0x7f050013;
+        public static final int common_google_play_services_sign_in_failed_title=0x7f050014;
+        public static final int common_google_play_services_unknown_issue=0x7f050015;
+        public static final int common_google_play_services_unsupported_text=0x7f050016;
+        public static final int common_google_play_services_unsupported_title=0x7f050017;
+        public static final int common_google_play_services_update_button=0x7f050018;
+        public static final int common_google_play_services_update_text=0x7f050019;
+        public static final int common_google_play_services_update_title=0x7f05001a;
+        public static final int common_google_play_services_updating_text=0x7f05001b;
+        public static final int common_google_play_services_updating_title=0x7f05001c;
+        public static final int common_open_on_phone=0x7f05001d;
+        public static final int common_signin_button_text=0x7f05001e;
+        public static final int common_signin_button_text_long=0x7f05001f;
+        public static final int no_internet=0x7f050024;
+        public static final int title_activity_detail=0x7f050025;
     }
     public static final class style {
         /**  Customize your theme here. 
          */
-        public static final int AppTheme=0x7f050000;
-        public static final int CardView=0x7f050001;
-        public static final int CardView_Dark=0x7f050002;
-        public static final int CardView_Light=0x7f050003;
-        public static final int MyActionBarTheme=0x7f050004;
+        public static final int AppTheme=0x7f060000;
+        public static final int CardView=0x7f060001;
+        public static final int CardView_Dark=0x7f060002;
+        public static final int CardView_Light=0x7f060003;
+        public static final int MyActionBarTheme=0x7f060004;
     }
     public static final class styleable {
         /** Attributes that can be used with a CardView.
@@ -417,6 +661,345 @@ containing a value of this type.
           @attr name com.greencoder.bealive:contentPaddingTop
         */
         public static final int CardView_contentPaddingTop = 9;
+        /** Attributes that can be used with a LoadingImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #LoadingImageView_circleCrop com.greencoder.bealive:circleCrop}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.greencoder.bealive:imageAspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.greencoder.bealive:imageAspectRatioAdjust}</code></td><td></td></tr>
+           </table>
+           @see #LoadingImageView_circleCrop
+           @see #LoadingImageView_imageAspectRatio
+           @see #LoadingImageView_imageAspectRatioAdjust
+         */
+        public static final int[] LoadingImageView = {
+            0x7f01000b, 0x7f01000c, 0x7f01000d
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#circleCrop}
+          attribute's value can be found in the {@link #LoadingImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:circleCrop
+        */
+        public static final int LoadingImageView_circleCrop = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#imageAspectRatio}
+          attribute's value can be found in the {@link #LoadingImageView} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:imageAspectRatio
+        */
+        public static final int LoadingImageView_imageAspectRatio = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#imageAspectRatioAdjust}
+          attribute's value can be found in the {@link #LoadingImageView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>adjust_width</code></td><td>1</td><td></td></tr>
+<tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name com.greencoder.bealive:imageAspectRatioAdjust
+        */
+        public static final int LoadingImageView_imageAspectRatioAdjust = 0;
+        /** Attributes that can be used with a MapAttrs.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #MapAttrs_cameraBearing com.greencoder.bealive:cameraBearing}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLat com.greencoder.bealive:cameraTargetLat}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTargetLng com.greencoder.bealive:cameraTargetLng}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraTilt com.greencoder.bealive:cameraTilt}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_cameraZoom com.greencoder.bealive:cameraZoom}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_liteMode com.greencoder.bealive:liteMode}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_mapType com.greencoder.bealive:mapType}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiCompass com.greencoder.bealive:uiCompass}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiMapToolbar com.greencoder.bealive:uiMapToolbar}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiRotateGestures com.greencoder.bealive:uiRotateGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiScrollGestures com.greencoder.bealive:uiScrollGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiTiltGestures com.greencoder.bealive:uiTiltGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomControls com.greencoder.bealive:uiZoomControls}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_uiZoomGestures com.greencoder.bealive:uiZoomGestures}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_useViewLifecycle com.greencoder.bealive:useViewLifecycle}</code></td><td></td></tr>
+           <tr><td><code>{@link #MapAttrs_zOrderOnTop com.greencoder.bealive:zOrderOnTop}</code></td><td></td></tr>
+           </table>
+           @see #MapAttrs_cameraBearing
+           @see #MapAttrs_cameraTargetLat
+           @see #MapAttrs_cameraTargetLng
+           @see #MapAttrs_cameraTilt
+           @see #MapAttrs_cameraZoom
+           @see #MapAttrs_liteMode
+           @see #MapAttrs_mapType
+           @see #MapAttrs_uiCompass
+           @see #MapAttrs_uiMapToolbar
+           @see #MapAttrs_uiRotateGestures
+           @see #MapAttrs_uiScrollGestures
+           @see #MapAttrs_uiTiltGestures
+           @see #MapAttrs_uiZoomControls
+           @see #MapAttrs_uiZoomGestures
+           @see #MapAttrs_useViewLifecycle
+           @see #MapAttrs_zOrderOnTop
+         */
+        public static final int[] MapAttrs = {
+            0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011,
+            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
+            0x7f010016, 0x7f010017, 0x7f010018, 0x7f010019,
+            0x7f01001a, 0x7f01001b, 0x7f01001c, 0x7f01001d
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#cameraBearing}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:cameraBearing
+        */
+        public static final int MapAttrs_cameraBearing = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#cameraTargetLat}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:cameraTargetLat
+        */
+        public static final int MapAttrs_cameraTargetLat = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#cameraTargetLng}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:cameraTargetLng
+        */
+        public static final int MapAttrs_cameraTargetLng = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#cameraTilt}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:cameraTilt
+        */
+        public static final int MapAttrs_cameraTilt = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#cameraZoom}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:cameraZoom
+        */
+        public static final int MapAttrs_cameraZoom = 5;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#liteMode}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:liteMode
+        */
+        public static final int MapAttrs_liteMode = 6;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#mapType}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>0</td><td></td></tr>
+<tr><td><code>normal</code></td><td>1</td><td></td></tr>
+<tr><td><code>satellite</code></td><td>2</td><td></td></tr>
+<tr><td><code>terrain</code></td><td>3</td><td></td></tr>
+<tr><td><code>hybrid</code></td><td>4</td><td></td></tr>
+</table>
+          @attr name com.greencoder.bealive:mapType
+        */
+        public static final int MapAttrs_mapType = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiCompass}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiCompass
+        */
+        public static final int MapAttrs_uiCompass = 7;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiMapToolbar}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiMapToolbar
+        */
+        public static final int MapAttrs_uiMapToolbar = 15;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiRotateGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiRotateGestures
+        */
+        public static final int MapAttrs_uiRotateGestures = 8;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiScrollGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiScrollGestures
+        */
+        public static final int MapAttrs_uiScrollGestures = 9;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiTiltGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiTiltGestures
+        */
+        public static final int MapAttrs_uiTiltGestures = 10;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiZoomControls}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiZoomControls
+        */
+        public static final int MapAttrs_uiZoomControls = 11;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#uiZoomGestures}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:uiZoomGestures
+        */
+        public static final int MapAttrs_uiZoomGestures = 12;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#useViewLifecycle}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:useViewLifecycle
+        */
+        public static final int MapAttrs_useViewLifecycle = 13;
+        /**
+          <p>This symbol is the offset where the {@link com.greencoder.bealive.R.attr#zOrderOnTop}
+          attribute's value can be found in the {@link #MapAttrs} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.greencoder.bealive:zOrderOnTop
+        */
+        public static final int MapAttrs_zOrderOnTop = 14;
         /** Attributes that can be used with a RecyclerView.
            <p>Includes the following attributes:</p>
            <table>
@@ -436,8 +1019,8 @@ containing a value of this type.
            @see #RecyclerView_stackFromEnd
          */
         public static final int[] RecyclerView = {
-            0x010100c4, 0x7f01000b, 0x7f01000c, 0x7f01000d,
-            0x7f01000e
+            0x010100c4, 0x7f01001e, 0x7f01001f, 0x7f010020,
+            0x7f010021
         };
         /**
           <p>This symbol is the offset where the {@link android.R.attr#orientation}

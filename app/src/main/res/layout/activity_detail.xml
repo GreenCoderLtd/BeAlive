@@ -15,7 +15,7 @@
 
     <fragment
         android:id="@+id/map_frag"
-        android:name="com.greencoder.bealive.DetailMapFragment"
+        android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
