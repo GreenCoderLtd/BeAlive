@@ -368,25 +368,27 @@ containing a value of this type.
         public static final int icon_refresh=0x7f02001b;
     }
     public static final class id {
-        public static final int action_refresh=0x7f090013;
+        public static final int action_refresh=0x7f090015;
         public static final int adjust_height=0x7f090001;
         public static final int adjust_width=0x7f090002;
         public static final int hr_bar=0x7f09000d;
         public static final int hybrid=0x7f090004;
         public static final int item_touch_helper_previous_elevation=0x7f090000;
         public static final int list_frag=0x7f09000a;
+        public static final int list_view=0x7f090012;
         public static final int map_frag=0x7f090009;
         public static final int none=0x7f090003;
         public static final int normal=0x7f090005;
         public static final int satellite=0x7f090006;
+        public static final int swipe_refresh_layout=0x7f090011;
         public static final int terrain=0x7f090007;
         public static final int text_date=0x7f09000f;
         public static final int text_frag=0x7f090008;
         public static final int text_location=0x7f09000e;
         public static final int text_magnitude=0x7f09000c;
         public static final int text_time=0x7f090010;
-        public static final int textview_magnitude=0x7f090011;
-        public static final int textview_place=0x7f090012;
+        public static final int textview_magnitude=0x7f090013;
+        public static final int textview_place=0x7f090014;
         public static final int view_color=0x7f09000b;
     }
     public static final class integer {
@@ -397,7 +399,8 @@ containing a value of this type.
         public static final int activity_main=0x7f040001;
         public static final int fragment_detail_map=0x7f040002;
         public static final int fragment_detail_text=0x7f040003;
-        public static final int list_row_summary=0x7f040004;
+        public static final int fragment_list_summary=0x7f040004;
+        public static final int list_row_summary=0x7f040005;
     }
     public static final class menu {
         public static final int menu_main=0x7f0b0000;

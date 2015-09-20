@@ -1,15 +1,20 @@
 package com.greencoder.bealive;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.app.ListFragment;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.text.Html;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -24,13 +29,20 @@ import com.greencoder.bealive.model.EarthQuackSummary;
 import com.greencoder.bealive.model.Feature;
 
 
-public class EartQuackListFragment extends ListFragment {
+public class EartQuackListFragment extends Fragment implements AdapterView.OnItemClickListener, SwipeRefreshLayout.OnRefreshListener
+{
 
     private static final String SUMMARY_URL="http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson";
 
     private EarthQuackListListener listener;
 
     ArrayAdapter<Feature> summaryAdapter;
+
+    SwipeRefreshLayout swipeRefresh;
+
+    ListView listView;
+
+
 
     static interface EarthQuackListListener
     {
@@ -42,6 +54,22 @@ public class EartQuackListFragment extends ListFragment {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
 
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        View view=inflater.inflate(R.layout.fragment_list_summary,container,false);
+
+        swipeRefresh=(SwipeRefreshLayout)view.findViewById(R.id.swipe_refresh_layout);
+
+        listView=(ListView)view.findViewById(R.id.list_view);
+
+        listView.setOnItemClickListener(this);
+
+        swipeRefresh.setOnRefreshListener(this);
+
+        return view;
     }
 
     @Override
@@ -105,7 +133,9 @@ public class EartQuackListFragment extends ListFragment {
 
                         summaryAdapter=new SummaryAdapter(getActivity(),R.layout.list_row_summary,allEarthQuackData);
 
-                        setListAdapter(summaryAdapter);
+                        listView.setAdapter(summaryAdapter);
+
+                        swipeRefresh.setRefreshing(false);
                     }
 
                 },
@@ -116,6 +146,8 @@ public class EartQuackListFragment extends ListFragment {
                     public void onErrorResponse(VolleyError error) {
 
                         //Toast.makeText(getActivity(), getString(R.string.no_internet), Toast.LENGTH_LONG).show();
+
+                        swipeRefresh.setRefreshing(false);
 
                     }
                 }
@@ -128,9 +160,9 @@ public class EartQuackListFragment extends ListFragment {
     }
 
 
+
     @Override
-    public void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
 
         if (null != listener) {
 
@@ -142,8 +174,16 @@ public class EartQuackListFragment extends ListFragment {
 
             double lon=weatherDeatils.getGeometry().getCoordinates().get(0);
 
-            listener.onItemClick(detailUrl,lat,lon);
+            listener.onItemClick(detailUrl, lat, lon);
         }
+
+    }
+
+    @Override
+    public void onRefresh() {
+
+        fetchEartQuackSummary();
+
     }
 
 
