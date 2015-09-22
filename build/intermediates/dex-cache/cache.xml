@@ -6,14 +6,98 @@
         jumboMode="false"
         revision="23.0.1"
         sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
-        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/debug/classes-2b5fcee4b7c140b942319b2296734887ec31a61d.jar" />
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/classes-2b5fcee4b7c140b942319b2296734887ec31a61d.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/2.0.0-beta1/53b5be42d6cf719ac1431b9aa9a4d5ab78856148/retrofit-2.0.0-beta1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="53b5be42d6cf719ac1431b9aa9a4d5ab78856148">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/retrofit-2.0.0-beta1-abcab2e29a55fedea04e6c3645274bb927852f36.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/gson-2.3.1-3ee267930a495d4b694e0a52925b970567a7f863.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/okio-1.6.0-422208e3e4dd8fc29800ae81f5ab40e0b8ea1ed5.jar" />
     </item>
     <item
         jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.8.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
-        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/debug/classes-a1d660da9a32d06cc4b9ac73b9e56317fa933d17.jar" />
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/classes-a1d660da9a32d06cc4b9ac73b9e56317fa933d17.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/classes-d7ebdfb805b2fecbcf32082f99e060ad53d20b26.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/picasso-2.5.2-954aa8ad089de62df1cf77987e3835e5e75ebf6b.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/classes-aa29e76014ccf63abe198faa5784b4b25e23ab53.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/support-annotations-23.0.1-60b9f04669ec25e8c51d5b39644183dfc03c437c.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/BeAlive/volley/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="153aaee04c53bac99c43825991449dfea67f8c97">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/classes-9b5cb5b81301b92fdd053fe7ec41a36d46167766.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/internal_impl-23.0.1-312935d7a2a3f2e4dd033db6cfcb76f1cb0acbd5.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="39ae02ce40c3ac828abbf780ce0ff5d7a28b7d6a">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/classes-81adc25d48f879163d2ce37b35f823c451fb729d.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/libs/butterknife-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/butterknife-7.0.1-b85fda1b801111a4229f42b8c3353a8fefda50e8.jar" />
+    </item>
+    <item
+        jar="/Users/newcomputer/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.5.0/4de2b4ed3445c37ec1720a7d214712e845a24636/okhttp-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4de2b4ed3445c37ec1720a7d214712e845a24636">
+        <dex dex="/Users/newcomputer/AndroidStudioProjects/BeAlive/app/build/intermediates/pre-dexed/release/okhttp-2.5.0-5f0f2b346de99aef500eae562a4b3148b32de68c.jar" />
     </item>
 
 </items>

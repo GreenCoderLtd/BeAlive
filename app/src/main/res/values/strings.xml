@@ -2,5 +2,5 @@
     <string name="app_name">BeAlive</string>
     <string name="action_refresh">Refresh</string>
     <string name="no_internet">Cannot Fetch Data</string>
-    <string name="title_activity_detail">Earthquack Details</string>
+    <string name="title_activity_detail">Earthquake Details</string>
 </resources>
