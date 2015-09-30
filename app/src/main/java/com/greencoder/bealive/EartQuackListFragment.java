@@ -29,6 +29,9 @@ import com.google.gson.Gson;
 import com.greencoder.bealive.model.EarthQuackSummary;
 import com.greencoder.bealive.model.Feature;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 
 public class EartQuackListFragment extends Fragment implements AdapterView.OnItemClickListener, SwipeRefreshLayout.OnRefreshListener
 {
@@ -39,9 +42,9 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
 
     ArrayAdapter<Feature> summaryAdapter;
 
-    SwipeRefreshLayout swipeRefresh;
+    @Bind(R.id.swipe_refresh_layout)SwipeRefreshLayout swipeRefresh;
 
-    ListView listView;
+    @Bind(R.id.list_view)ListView listView;
 
     RequestQueue requestQueue;
 
@@ -69,9 +72,7 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
 
         View view=inflater.inflate(R.layout.fragment_list_summary,container,false);
 
-        swipeRefresh=(SwipeRefreshLayout)view.findViewById(R.id.swipe_refresh_layout);
-
-        listView=(ListView)view.findViewById(R.id.list_view);
+        ButterKnife.bind(this,view);
 
         listView.setOnItemClickListener(this);
 
