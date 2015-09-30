@@ -49,6 +49,7 @@ public class SummaryAdapter extends ArrayAdapter<Feature> {
         public ViewHolder(View view)
         {
             ButterKnife.bind(this,view);
+
         }
     }
 

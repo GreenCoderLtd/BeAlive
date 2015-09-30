@@ -20,6 +20,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
@@ -42,6 +43,10 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
 
     ListView listView;
 
+    RequestQueue requestQueue;
+
+    public static final String MY_NETWORK_TAG="belive_net";
+
 
 
     static interface EarthQuackListListener
@@ -52,7 +57,10 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setHasOptionsMenu(true);
+
+        requestQueue = Volley.newRequestQueue(getActivity());
 
     }
 
@@ -126,7 +134,6 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
 
                         getActivity().setTitle(Html.fromHtml("<small>" + summary.getMetadata().getTitle() + "</small>"));
 
-
                         Feature[] allEarthQuackData=new Feature[summary.getFeatures().size()];
 
                         summary.getFeatures().toArray(allEarthQuackData);
@@ -156,7 +163,11 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
 
         );
 
-        Volley.newRequestQueue(getActivity()).add(request);
+        request.setTag(MY_NETWORK_TAG);
+
+        requestQueue.add(request);
+
+
     }
 
 
@@ -217,6 +228,15 @@ public class EartQuackListFragment extends Fragment implements AdapterView.OnIte
     }
 
 
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        if(requestQueue!=null)
+        {
+            requestQueue.cancelAll(MY_NETWORK_TAG);
+        }
+    }
 
     @Override
     public void onDetach() {

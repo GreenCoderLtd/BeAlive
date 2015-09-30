@@ -33,6 +33,8 @@ public class MainActivity extends Activity implements EartQuackListFragment.Eart
 
         setContentView(R.layout.activity_main);
 
+
+
     }
 
 

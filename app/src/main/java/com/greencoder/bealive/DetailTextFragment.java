@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
@@ -37,12 +38,17 @@ public class DetailTextFragment extends Fragment {
     public static final String DETAIL_URL="detailUrl";
     private String detailUrl;
 
+    RequestQueue requestQueue;
+
     @Bind(R.id.text_magnitude)TextView magnitudeTextView;
     @Bind(R.id.text_location) TextView locationTextView;
     @Bind(R.id.text_date) TextView dateTextView;
     @Bind(R.id.text_time) TextView timeTextView;
 
-    public DetailTextFragment() {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        requestQueue = Volley.newRequestQueue(getActivity());
     }
 
     @Override
@@ -194,7 +200,19 @@ public class DetailTextFragment extends Fragment {
 
         );
 
+        request.setTag(EartQuackListFragment.MY_NETWORK_TAG);
+
         Volley.newRequestQueue(getActivity()).add(request);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        if(requestQueue!=null)
+        {
+            requestQueue.cancelAll(EartQuackListFragment.MY_NETWORK_TAG);
+        }
     }
 
     public void setDetailUrl(String detailUrl) {
